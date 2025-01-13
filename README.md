@@ -24,8 +24,8 @@ Before starting, ensure you have the following installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/graphql-example.git
-   cd graphql-example
+   git clone https://github.com/alfadexters/GraphQL-with-Node.js.git
+   cd GraphQL-with-Node
    ```
 2. Install dependencies:
    ```bash
@@ -48,7 +48,6 @@ Query all books
 To retrieve all books, use the following query:
 
 ```graphql
-Copiar código
 query {
   books {
     id
@@ -61,7 +60,6 @@ Add a new book
 To add a new book to the collection, use the following mutation:
 
 ```graphql
-Copiar código
 mutation {
   addBook(title: "The Great Gatsby", author: "F. Scott Fitzgerald") {
     id
@@ -72,7 +70,6 @@ mutation {
 ```
 Example Response (Query)
 ```json
-Copiar código
 {
   "data": {
     "books": [
@@ -84,7 +81,6 @@ Copiar código
 ```
 Example Response (Mutation)
 ```json
-Copiar código
 {
   "data": {
     "addBook": {
